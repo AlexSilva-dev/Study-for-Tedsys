@@ -1,0 +1,51 @@
+/*formatação padrão 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Trebuchet MS, helvetica, sans-serif;
+
+}
+
+
+nav{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 166, 0);
+}
+
+.div-menu{
+    height: 40px;
+    text-align: center;
+    
+    margin-top: 50px;
+}
+.div-menu a{
+    font-family: 'Trebuchet MS';
+    text-decoration: none;
+    font-weight: 800;
+    margin: 1%;
+    color: white;
+    padding: 6px 12px;
+}
+.div-menu a:hover{
+    color: rgb(255, 166, 0);
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.h1-logo, .span-logo{
+    font-size: xx-large;
+}
+.span-logo{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: inline;
+    color: white;
+}
+
