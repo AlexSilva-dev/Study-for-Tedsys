@@ -5,7 +5,9 @@
     padding: 0;
     margin: 0;
 }
-
+a{
+    color: rgb(255, 166, 0);
+}
 body{
     font-family: Trebuchet MS, helvetica, sans-serif;
 
@@ -27,7 +29,7 @@ nav{
 .div-menu a{
     font-family: 'Trebuchet MS';
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 900;
     margin: 1%;
     color: white;
     padding: 6px 12px;
@@ -49,3 +51,87 @@ nav{
     color: white;
 }
 
+
+/* conteudo da pag principal
+*/
+
+.grid-principal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.coll-grid-conteudo{
+    grid-column: 1;
+}
+.coll-menu-lateral{
+    padding-top: 8%;
+    padding-right: 10%;
+    grid-column: 2;
+}
+
+.grid-container-conteudo{
+    min-width: 200px;
+    padding-bottom: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    margin: 4%;
+    border: 2px solid rgba(170, 205, 236, 0.288);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-container-conteudo h2{
+    color: rgb(233, 151, 0);
+ 
+}
+
+
+.img-posts{
+    margin-top: 2%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.div-post{
+    min-width: 100px;
+    margin: 3%;
+    padding: 2%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.h3-posts-recentes, .h3-categorias{
+    margin-bottom: 4%;
+    padding: 2%;
+    background-color: rgb(20, 135, 243);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.div-posts-recentes{
+    padding: 2% 5%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.div-posts-recentes p{
+    margin: 5% 0;
+}
+
+.div-categorias-posts{
+    margin: 20% 0;
+    padding: 2% 5%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.div-categorias-posts a{
+    display: block;
+    font-size: 130%;
+    text-decoration: none;
+    margin: 5% 0;
+}
