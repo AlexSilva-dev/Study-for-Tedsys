@@ -1,0 +1,97 @@
+.div-conteudo {
+    background-color: white;
+    margin: 2%;
+    border-radius: 15px;
+    padding: 5%;
+
+}
+
+.div-topo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.h1-titulo {
+    display: inline;
+    grid-column: span 2;
+}
+
+.btn-add {
+
+    grid-column: 3;
+    align-self: center;
+    width: max-content;
+    margin-left: auto;
+}
+
+
+.form-pesquisa {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.div-tipos_filtros {
+    display: inline;
+    width: max-content;
+    grid-column: 5;
+}
+
+#search {
+    display: inline;
+    grid-column: 1;
+
+}
+
+.select-filtro,
+.select-ordem,
+.btn-filtrar {
+    width: max-content;
+    display: inline;
+
+
+
+}
+
+table{
+    margin: 0;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke; /* Cor da linha ímpar */
+}
+
+tr:nth-child(even) {
+    background-color: white; /* Cor da linha par */
+}
+
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.progress-bar{
+    /* vamos declarar nossa
+      variável com o nome de
+      "progress". Ela terá seu
+      valor entre 0 e 100.
+      */
+    --progress: 25;
+    height: 5px;
+    padding: 1px;
+    background-color: #ccc;
+    display: flex;
+  }
+  
+  .progress-bar::before{
+    content: "";
+    content: "";
+    width: calc(var(--progress) * 1%);
+    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+  }
+  

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+
+.div-barra_lateral {
+    position: fixed;
+    height: 100%;
+    background-color: rgb(3, 80, 245);
+    width: 70px;
+
+
+}
+
+.grid-principal {
+    height: auto;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    margin-left: 70px;
+}
+
+.grid_principal-c1-r1 {
+    grid-row: 1;
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+.div-icons i {
+
+    border: 0px solid black;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 10px;
+}
+
+
+.grid_principal-c1-r2 {
+    grid-row: 2;
+
+    display: inline-block;
+    border: 0 solid black;
+    background-color: ;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.div-icons {
+
+
+    display: block;
+    width: 150px;
+    float: right;
+}
+

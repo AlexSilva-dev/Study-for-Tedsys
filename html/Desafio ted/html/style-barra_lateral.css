@@ -1,0 +1,27 @@
+
+.div-barra_lateral{
+
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.div-barra_lateral a{
+}
+.div-barra_lateral img{
+
+    display: inline;
+    width: 60%;
+    padding: 4%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5vh;
+    border-radius: 10px;
+    scrollbar-shadow-color: black;
+    box-shadow: 1px 1px 10px black; 
+
+
+
+
+
+
+}
