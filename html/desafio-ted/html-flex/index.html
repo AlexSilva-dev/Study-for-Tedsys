@@ -19,27 +19,26 @@
 <body>
     <div class="div-barra_lateral">
 
-        <center>
-            <a class="a-dash" href="index.html">
-                <i class="fas fa-cube i-dash"></i>
-            </a>
 
-            <a href="#">
-                <img src="icons/dinheiro.png" alt="dinheiro">
-            </a>
+        <a class="a-dash" href="index.html">
+            <img class="img-dash" src="icons/caixa2.png" alt="produtos">
+        </a>
 
-            <a href="#">
-                <img src="icons/net.png" alt="">
-            </a>
+        <a href="#">
+            <img src="icons/dinheiro.png" alt="dinheiro">
+        </a>
 
-            <a href="#">
-                <img src="icons/gaveta.png" alt="gaveta">
-            </a>
+        <a href="#">
+            <img src="icons/net.png" alt="">
+        </a>
 
-            <a href="#">
-                <img src="icons/ferramenta.png" alt="">
-            </a>
-        </center>
+        <a href="#">
+            <img src="icons/gaveta.png" alt="gaveta">
+        </a>
+
+        <a href="#">
+            <img src="icons/ferramenta.png" alt="">
+        </a>
 
     </div>
     <div class="grid-principal">
@@ -74,36 +73,42 @@
 
                 <div class="div-topo">
                     <h1 class="h1-titulo">Lista de produtos</h1>
-                    <button class="btn-add" onclick="window.location.href='criar-produto.html'">Adicionar produto</button>
+                    <button class="btn-add" onclick="window.location.href='criar-produto.html'">Adicionar
+                        produto
+                    </button>
 
                 </div>
 
                 <form class="form-pesquisa" action="post">
-                    <input type="search" name="search" id="search" placeholder="Procurar produto">
 
-                    <div class="div-tipos_filtros">
-                        <select class="select-filtro" name="filtro" id="filtro">
-                            <option value="0">Filtrar por</option>
-                            <option value="nome">Nome</option>
-                            <option value="bruto">Bruto</option>
-                            <option value="liquido">Líquido</option>
-                            <option value="Lucro">Lucro</option>
-                            <option value="estoque">Estoque</option>
-                            <option value="disponivel">Disponível</option>
-                            <option value="venda">Venda</option>
-                            <option value="expiracao">Data de expiração</option>
-                        </select>
+                    <div class="div-pesquisa">
+                        <input type="search" name="search" id="search" placeholder="Procurar produto">
 
-                        <select class="select-ordem" name="ordem" id="ordem">
-                            <option value="crescente">Crescente</option>
-                            <option value="decrecente">Decrecente</option>
-                        </select>
-
-
-                        <button class="btn-filtrar" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
+                        <div class="div-tipos_filtros">
+                            <select class="select-filtro" name="filtro" id="filtro">
+                                <option value="0">Filtrar por</option>
+                                <option value="nome">Nome</option>
+                                <option value="bruto">Bruto</option>
+                                <option value="liquido">Líquido</option>
+                                <option value="Lucro">Lucro</option>
+                                <option value="estoque">Estoque</option>
+                                <option value="disponivel">Disponível</option>
+                                <option value="venda">Venda</option>
+                                <option value="expiracao">Data de expiração</option>
+                            </select>
+    
+                            <select class="select-ordem" name="ordem" id="ordem">
+                                <option value="crescente">Crescente</option>
+                                <option value="decrecente">Decrecente</option>
+                            </select>
+    
+    
+                            <button class="btn-filtrar" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
                     </div>
+                    
 
                 </form>
 
@@ -111,68 +116,68 @@
 
                 <table>
                     <thead>
-                      <tr>
-                        <th>Nome produto</th>
-                        <th>Descrição</th>
-                        <th>Categoria</th>
-                        <th>Bruto</th>
-                        <th>Líquido</th>
-                        <th>Venda</th>
-                        <th>Ações</th>
-                      </tr>
+                        <tr>
+                            <th>Nome produto</th>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Bruto</th>
+                            <th>Líquido</th>
+                            <th>Venda</th>
+                            <th>Ações</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Bicicleta</td>
-                        <td>Descrição da bicicleta</td>
-                        <td>Esportes</td>
-                        <td>700</td>
-                        <td>560</td>
-                        <td>25</td>
-                        <td>
-                          <button class="btn-editar">
-                            <i class="fas fa-pencil-alt"></i>
-                          </button>
-                          <button class="btn-excluir">
-                            <i class="fas fa-eraser"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Computador</td>
-                        <td>Descrição do computador</td>
-                        <td>Tecnologia</td>
-                        <td>1200</td>
-                        <td>1000</td>
-                        <td>50</td>
-                        <td>
-                          <button class="btn-editar">
-                            <i class="fas fa-pencil-alt"></i>
-                          </button>
-                          <button class="btn-excluir">
-                            <i class="fas fa-eraser"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Telefone</td>
-                        <td>Descrição do telefone</td>
-                        <td>Tecnologia</td>
-                        <td>500</td>
-                        <td>400</td>
-                        <td>10</td>
-                        <td>
-                          <button class="btn-editar">
-                            <i class="fas fa-pencil-alt"></i>
-                          </button>
-                          <button class="btn-excluir">
-                            <i class="fas fa-eraser"></i>
-                          </button>
-                        </td>
-                      </tr>
+                        <tr>
+                            <td>Bicicleta</td>
+                            <td>Descrição da bicicleta</td>
+                            <td>Esportes</td>
+                            <td>700</td>
+                            <td>560</td>
+                            <td>25</td>
+                            <td>
+                                <button class="btn-editar">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button class="btn-excluir">
+                                    <i class="fas fa-eraser"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Computador</td>
+                            <td>Descrição do computador</td>
+                            <td>Tecnologia</td>
+                            <td>1200</td>
+                            <td>1000</td>
+                            <td>50</td>
+                            <td>
+                                <button class="btn-editar">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button class="btn-excluir">
+                                    <i class="fas fa-eraser"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Telefone</td>
+                            <td>Descrição do telefone</td>
+                            <td>Tecnologia</td>
+                            <td>500</td>
+                            <td>400</td>
+                            <td>10</td>
+                            <td>
+                                <button class="btn-editar">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button class="btn-excluir">
+                                    <i class="fas fa-eraser"></i>
+                                </button>
+                            </td>
+                        </tr>
                     </tbody>
-                  </table>
-                  
+                </table>
+
             </div>
         </div>
 

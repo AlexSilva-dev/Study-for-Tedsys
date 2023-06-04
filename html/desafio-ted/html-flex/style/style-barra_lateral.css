@@ -1,58 +1,43 @@
-
-.div-barra_lateral{
-
-    align-self: center;
-    align-items: center;
-    align-content: center;
-    padding-top: 15vh;
+.div-barra_lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  
+  
 }
 
-
-
-.div-barra_lateral img{
-
-    display: inline;
-    width: 60%;
-    padding: 4%;
-    background-color: rgb(255, 255, 255);
-    margin-top: 5vh;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(66, 66, 66); 
-
+.div-barra_lateral a{
+  display: inline;
+  width: min-content;
 }
 
-.div-barra_lateral img:hover{
-
-    box-shadow: 0 0 10px black;
-    padding-left: 6%;
-    padding-right: 6%;
+.div-barra_lateral img {
+  display: inline;
+  width: 40px;
+  padding: 4%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(66, 66, 66);
 }
 
-.div-barra_lateral .img-dash{
-    box-shadow: 0 0 10px black;
-    color: aliceblue;
-    padding: 6% 10%;
+.div-barra_lateral img:hover {
+  box-shadow: 0 0 10px black;
+  transition: 0.2s;
+  width: 45px;
+  
 }
 
-.i-dash{
-    font-size: xx-large;
-    display: inline;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-
-    color: black;
-    padding: 10% 15%;
-    margin-top: 5vh;
+.div-barra_lateral .img-dash {
+  box-shadow: 0 0 12px black;
+  color: aliceblue;
+  width: 45px;
 
 }
 
-.a-dash{
-    background-color: rgb(172, 48, 48);
+.img-dash
 
-}
-.i-dash:hover{
-
-    box-shadow: 0 0 10px black;
-
+.i-dash:hover {
+  box-shadow: 0 0 10px black;
 }

@@ -5,12 +5,17 @@
     border-radius: 15px;
     padding: 5%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 8vh;
+
+
 }
 
 .div-topo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 40px;
 }
 
 .h1-titulo {
@@ -47,40 +52,55 @@
 
 
 .form-pesquisa {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
 
-#search {
-    display: inline;
-    grid-column: 1;
-
-
-
+.div-pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .div-tipos_filtros {
+
     display: inline;
     width: 400px;
-    grid-column: 4;
     text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 
 
 #search {
     border-radius: 8px;
     border: 1px solid rgb(243, 170, 35);
-    padding: 2% 1%;
-
+    padding: 1% 1%;
+    width: 40%;
     font-size: medium;
+
+}
+
+
+.select-filtro,
+.select-ordem,
+#search,
+.btn-filtrar{
+    padding: 2vh 2vw;
+    height: 80%;
+
 
 }
 
 .select-filtro,
 .select-ordem {
+    height: 80%;
     border-radius: 8px;
-    padding: 2% 1%;
+    padding: 2% 10px;
     font-size: medium;
 
     border: 0 solid;
@@ -122,7 +142,7 @@
 
 
 table {
-    margin-top: 5vh;
+    margin-top: 1vh;
     width: 100%;
     padding: 1%;
     text-align: center;

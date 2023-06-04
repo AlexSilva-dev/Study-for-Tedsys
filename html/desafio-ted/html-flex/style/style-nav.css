@@ -1,5 +1,6 @@
 
-.h1-logo{
+
+.h1-logo {
     font-family: monospace;
     float: left;
     margin-top: 10px;
@@ -8,12 +9,12 @@
     font-size: 26px;
 }
 
-.a-logo:visited{
+.a-logo:visited {
     color: rgb(0, 132, 255);
 
 }
 
-.span-logo{
+.span-logo {
     font-size: 14px;
     color: rgb(243, 170, 35);
 }
@@ -39,19 +40,21 @@
     padding: 12px;
 }
 
-.div-icons i:hover{
+.div-icons i:hover {
     background-color: rgb(0, 132, 255);
 }
 
-.div-icons a:visited, .div-icons a{
+.div-icons a:visited,
+.div-icons a {
     color: rgb(255, 255, 255);
 }
 
-.div-icons .i-menu{
+.div-icons .i-menu {
     color: black;
     background-color: transparent;
 }
-.a-menu{
+
+.a-menu {
     margin-left: 10%;
     background-color: none;
 
