@@ -1,9 +1,148 @@
 
-.ep-h1-navegacao{
+.ep-a-navegacao{
+    color: rgb(209, 138, 6);
+    
+    font-size: medium;
+}
+
+.ep-form-criar_produto{
+
+    margin-top: 5%;
+    padding: 1% 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+
+}
+
+.ep-form-criar_produto div{
+    margin-top: 5vh;
+    width: max-content;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
-#ep-nome{
+
+
+.ep-form-criar_produto .ep-div-categoria, .ep-form-criar_produto .ep-div-nome{
+    margin-top: 15%;
+}
+
+.ep-form-criar_produto label{
+    font-size: 120%;
+    display: block;
+}
+
+.ep-form-criar_produto input, .ep-form-criar_produto select{
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 8px;
+    padding: 2% 1vw;
+    font-size: medium;
+
+    border: 0 solid;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(190, 188, 188);
+}
+.ep-form-criar_produto input:focus, .ep-form-criar_produto select:focus, .ep-form-criar_produto textarea:focus{
+
+    box-shadow: 0 0 5px rgb(243, 170, 35);
+
+}
+
+.ep-h3-geral{
+    font-size: 130%;
+    
+}
+
+.ep-div-nome{
+
     grid-column: 1;
     grid-template-rows: 2;
+}
+
+
+.ep-div-categoria{
+    grid-column: 2;
+    grid-template-rows: 2;
+
+    padding-top: auto;
+}
+
+.ep-form-criar_produto .ep-div-descricao{
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 70%
+
+}
+
+.ep-div-custo{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.ep-div-valor_venda{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#ep-descricao{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 8px;
+    padding: 2% 1vw;
+    font-size: medium;
+
+    border: 0 solid;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(190, 188, 188);
+
+    resize: none;
+}
+
+#ep-descricao:focus{
+
+    box-shadow: 0 0 5px rgb(243, 170, 35);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.btn-criar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 5;
+
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+
+
+    align-self: center;
+    width: max-content;
+    margin-left: auto;
+
+    font-size: large;
+    padding: 10px 2vw;
+    border-radius: 10px;
+    border: 0 solid;
+
+
+    font-weight: 600;
+    color: aliceblue;
+    box-shadow: 0 0 10px gray;
+    background-color: rgb(0, 132, 255);
+    
 }

@@ -21,8 +21,8 @@
     <div class="div-barra_lateral">
 
         <center>
-            <a class="a-dash" href="#">
-                <img class="img-dash" src="icons/icons8-estatisticas-100.png" alt="home">
+            <a class="a-dash" href="index.html">
+                <i class="fas fa-cube i-dash"></i>
             </a>
 
             <a href="#">
@@ -82,31 +82,54 @@
                 </div>
 
                 <form class="ep-form-criar_produto" action="post">
-                    <h3>Geral</h3>
+                    <h3 class="ep-h3-geral">Geral</h3>
 
-                    <label for="ep-nome">Nome do produto</label>
-                    <input id="ep-nome" type="text" name="nome">
+                    <div class="ep-div-nome">
 
-                    <label for="ep-categoria">Categoria</label>
-                    <select id="ep-categoria" name="categoria" id="ep-categoria">
-                        <option value="1">Selecione uma categoria</option>
-                        <option value="eletronicos">Eletrónicos</option>
-                        <option value="moveis">Moveis</option>
-                        <option value="utilitarios">Utilitários</option>
-                        <option value="roupas">Roupas</option>
-                        <option value="Outros">Outros</option>
-                    </select>
+                        <label for="ep-nome">Nome do produto:</label>
+                        <input id="ep-nome" type="text" name="nome">
+
+                    </div>
+
+                    <div class="ep-div-categoria">
+                        <label for="ep-categoria">Categoria:</label>
+                        <select id="ep-categoria" name="categoria" id="ep-categoria">
+                            <option value="1">Selecione uma categoria</option>
+                            <option value="eletronicos">Eletrónicos</option>
+                            <option value="moveis">Moveis</option>
+                            <option value="utilitarios">Utilitários</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+
+                    </div>
 
 
-                    <label for="ep-descricao">Descrição do produto</label>
-                    <textarea name="descricao" id="ep-descricao" cols="30" rows="5"></textarea>
+                    <div class="ep-div-descricao">
 
-                    <label for="ep-custo">Custo</label>
-                    <input id="ep-custo" type="number" name="ep-custo">
+                        <label for="ep-descricao">Descrição do produto:</label>
+                        <textarea name="descricao" id="ep-descricao" cols="30" rows="5"></textarea>
 
-                    <label for="ep-valor_venda">Valor de venda</label>
-                    <input id="ep-valor_venda" type="number" name="ep-valor_venda">
-                    
+                    </div>
+
+                    <div>
+
+                        <label for="ep-custo">Custo:</label>
+                        <input id="ep-custo" type="number" name="ep-custo">
+
+                    </div>
+
+
+                    <div class="ep-div-valor_venda">
+
+                        <label for="ep-valor_venda">Valor de venda:</label>
+                        <input class="ep-valor_venda" id="ep-valor_venda" type="number" name="ep-valor_venda" >
+
+                    </div>
+
+                    <button class="btn-criar" type="submit">
+                        Criar
+                    </button>
 
                 </form>
 
