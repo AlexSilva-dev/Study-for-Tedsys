@@ -1,0 +1,58 @@
+
+.div-barra_lateral{
+
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15vh;
+}
+
+
+
+.div-barra_lateral img{
+
+    display: inline;
+    width: 60%;
+    padding: 4%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(66, 66, 66); 
+
+}
+
+.div-barra_lateral img:hover{
+
+    box-shadow: 0 0 10px black;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.div-barra_lateral .img-dash{
+    box-shadow: 0 0 10px black;
+    color: aliceblue;
+    padding: 6% 10%;
+}
+
+.i-dash{
+    font-size: xx-large;
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+
+    color: black;
+    padding: 10% 15%;
+    margin-top: 5vh;
+
+}
+
+.a-dash{
+    background-color: rgb(172, 48, 48);
+
+}
+.i-dash:hover{
+
+    box-shadow: 0 0 10px black;
+
+}

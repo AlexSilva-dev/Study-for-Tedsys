@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-conteudo_principal.css">
+    <link rel="stylesheet" href="style/style-barra_lateral.css">
+    <link rel="stylesheet" href="style/style-nav.css">
+    <link rel="stylesheet" href="style/style-footer.css">
+    <link rel="stylesheet" href="style/edit-page/ep-conteudo_principal.css">
+</head>
+
+
+
+<body>
+    <div class="div-barra_lateral">
+
+        <center>
+            <a class="a-dash" href="index.html">
+                <i class="fas fa-cube i-dash"></i>
+            </a>
+
+            <a href="#">
+                <img src="icons/dinheiro.png" alt="dinheiro">
+            </a>
+
+            <a href="#">
+                <img src="icons/net.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="icons/gaveta.png" alt="gaveta">
+            </a>
+
+            <a href="#">
+                <img src="icons/ferramenta.png" alt="">
+            </a>
+        </center>
+
+    </div>
+    <div class="grid-principal">
+
+
+        <nav class="grid_principal-c1-r1">
+
+            <h1 class="h1-logo">
+                <a class="a-logo" href="index.html">
+                    ALEX<span class="span-logo">SYS</span>
+                </a>
+            </h1>
+
+
+            <div class="div-icons">
+                <a href="#"><i class="fas fa-bell i-sino fa-lg"></i></a>
+                <a href="#"><i class="fas fa-user fa-lg"></i></a>
+                <a class="a-menu" href="#">
+                    <i class="fas fa-ellipsis-v fa-lg i-menu"></i>
+                </a>
+
+            </div>
+
+
+        </nav>
+
+
+
+        <div class="grid_principal-c1-r2">
+
+            <div class="div-conteudo">
+
+                <div class="ep-div-topo">
+                    <h2 class="ep-h2-navegacao">
+                        <a class="ep-a-navegacao" href="index.html">Lista de produtos</a>
+                        > Criar produto
+                    </h2>
+
+                </div>
+
+                <form class="ep-form-criar_produto" action="post">
+                    <h3 class="ep-h3-geral">Geral</h3>
+
+                    <div class="ep-div-nome">
+
+                        <label for="ep-nome">Nome do produto:</label>
+                        <input id="ep-nome" type="text" name="nome">
+
+                    </div>
+
+                    <div class="ep-div-categoria">
+                        <label for="ep-categoria">Categoria:</label>
+                        <select id="ep-categoria" name="categoria" id="ep-categoria">
+                            <option value="1">Selecione uma categoria</option>
+                            <option value="eletronicos">Eletrónicos</option>
+                            <option value="moveis">Moveis</option>
+                            <option value="utilitarios">Utilitários</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="ep-div-descricao">
+
+                        <label for="ep-descricao">Descrição do produto:</label>
+                        <textarea name="descricao" id="ep-descricao" cols="30" rows="5"></textarea>
+
+                    </div>
+
+                    <div>
+
+                        <label for="ep-custo">Custo:</label>
+                        <input id="ep-custo" type="number" name="ep-custo">
+
+                    </div>
+
+
+                    <div class="ep-div-valor_venda">
+
+                        <label for="ep-valor_venda">Valor de venda:</label>
+                        <input class="ep-valor_venda" id="ep-valor_venda" type="number" name="ep-valor_venda" >
+
+                    </div>
+
+                    <button class="btn-criar" type="submit">
+                        Criar
+                    </button>
+
+                </form>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <footer class="grid_principal-c1-r3">
+
+
+
+            <nav class="footer-c1-r1">
+                <h3>Sobre-nós</h3>
+                <ul>
+                    <li>
+                        <a href="#">Quem somos</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer-c2">
+                <h3>Suporte</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Telefones</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Chat</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer-c3-r1">
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="icons/2021_Facebook_icon.svg" alt="facebook">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="icons/Instagram_icon.png" alt="instagram">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="icons/linkedin.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer-c1_2-r2">
+                <h1 class="h1-logo">
+                    <a class="a-logo" href="index.html">
+                        ALEX<span class="span-logo">SYS</span>
+                    </a>
+                </h1>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
