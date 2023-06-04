@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-conteudo_principal.css">
-    <link rel="stylesheet" href="style-barra_lateral.css">
-    <link rel="stylesheet" href="style-nav.css">
-    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-conteudo_principal.css">
+    <link rel="stylesheet" href="style/style-barra_lateral.css">
+    <link rel="stylesheet" href="style/style-nav.css">
+    <link rel="stylesheet" href="style/style-footer.css">
+    <link rel="stylesheet" href="style/edit-page/ep-conteudo_principal.css">
 </head>
 
 
@@ -46,6 +47,14 @@
 
 
         <nav class="grid_principal-c1-r1">
+
+            <h1 class="h1-logo">
+                <a class="a-logo" href="index.html">
+                    ALEX<span class="span-logo">SYS</span>
+                </a>
+            </h1>
+
+
             <div class="div-icons">
                 <a href="#"><i class="fas fa-bell i-sino fa-lg"></i></a>
                 <a href="#"><i class="fas fa-user fa-lg"></i></a>
@@ -64,137 +73,51 @@
 
             <div class="div-conteudo">
 
-                <div class="div-topo">
-                    <h1 class="h1-titulo">Lista de produtos</h1>
-                    <button class="btn-add">Adicionar produto</button>
+                <div class="ep-div-topo">
+                    <h2 class="ep-h2-navegacao">
+                        <a class="ep-a-navegacao" href="index.html">Lista de produtos</a>
+                        > Criar produto
+                    </h2>
 
                 </div>
 
-                <form class="form-pesquisa" action="post">
-                    <input type="search" name="search" id="search" placeholder="Procurar produto">
+                <form class="ep-form-criar_produto" action="post">
+                    <h3>Geral</h3>
 
-                    <div class="div-tipos_filtros">
-                        <select class="select-filtro" name="filtro" id="filtro">
-                            <option value="0">Filtrar por</option>
-                            <option value="nome">Nome</option>
-                            <option value="bruto">Bruto</option>
-                            <option value="liquido">Líquido</option>
-                            <option value="Lucro">Lucro</option>
-                            <option value="estoque">Estoque</option>
-                            <option value="disponivel">Disponível</option>
-                            <option value="venda">Venda</option>
-                            <option value="expiracao">Data de expiração</option>
-                        </select>
+                    <label for="ep-nome">Nome do produto</label>
+                    <input id="ep-nome" type="text" name="nome">
 
-                        <select class="select-ordem" name="ordem" id="ordem">
-                            <option value="crescente">Crescente</option>
-                            <option value="decrecente">Decrecente</option>
-                        </select>
+                    <label for="ep-categoria">Categoria</label>
+                    <select id="ep-categoria" name="categoria" id="ep-categoria">
+                        <option value="1">Selecione uma categoria</option>
+                        <option value="eletronicos">Eletrónicos</option>
+                        <option value="moveis">Moveis</option>
+                        <option value="utilitarios">Utilitários</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="Outros">Outros</option>
+                    </select>
 
 
-                        <button class="btn-filtrar" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
+                    <label for="ep-descricao">Descrição do produto</label>
+                    <textarea name="descricao" id="ep-descricao" cols="30" rows="5"></textarea>
+
+                    <label for="ep-custo">Custo</label>
+                    <input id="ep-custo" type="number" name="ep-custo">
+
+                    <label for="ep-valor_venda">Valor de venda</label>
+                    <input id="ep-valor_venda" type="number" name="ep-valor_venda">
+                    
 
                 </form>
 
 
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome produto</th>
-                            <th>Bruto</th>
-                            <th>Líquido</th>
-                            <th>Lucro</th>
-                            <th>Estoque</th>
-                            <th>Disponível</th>
-                            <th>Venda</th>
-                            <th>Data de expiração</th>
-                            <th>Ações</th>
-                        </tr>
-                    </thead>
-
-                    <tr>
-                        <td>Bicicleta</td>
-                        <td>700</td>
-                        <td>560</td>
-                        <td>140</td>
-                        <td>40</td>
-                        <td>
-                            25<br>
-                            de 100
-                        </td>
-                        <td>
-                            25<br>
-                            <div class="progress-bar"></div>
-                        </td>
-                        <td>20/08/2023</td>
-                        <td>
-                            <button class="btn-editar">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-
-                            <button class="btn-excluir">
-                                <i class="fas fa-eraser"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Computador</td>
-                        <td>1200</td>
-                        <td>1000</td>
-                        <td>200</td>
-                        <td>80</td>
-                        <td>
-                            50<br>
-                            de 100
-                        </td>
-                        <td>
-                            50<br>
-                            <div class="progress-bar"></div>
-                        </td>
-                        <td>15/09/2023</td>
-                        <td>
-                            <button class="btn-editar">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-
-                            <button class="btn-excluir">
-                                <i class="fas fa-eraser"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Telefone</td>
-                        <td>500</td>
-                        <td>400</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>
-                            10<br>
-                            de 100
-                        </td>
-                        <td>
-                            10<br>
-                            <div class="progress-bar"></div>
-                        </td>
-                        <td>02/10/2023</td>
-                        <td>
-                            <button class="btn-editar">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-
-                            <button class="btn-excluir">
-                                <i class="fas fa-eraser"></i>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
 
             </div>
         </div>
+
+
+
 
         <footer class="grid_principal-c1-r3">
 
@@ -258,7 +181,11 @@
             </nav>
 
             <div class="footer-c1_2-r2">
-                <h1>AlexSYS</h1>
+                <h1 class="h1-logo">
+                    <a class="a-logo" href="index.html">
+                        ALEX<span class="span-logo">SYS</span>
+                    </a>
+                </h1>
             </div>
 
         </footer>

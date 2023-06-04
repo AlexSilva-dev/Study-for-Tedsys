@@ -19,6 +19,9 @@ button:active{
 button:hover{
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
 body {
     background-color: whitesmoke;
     margin: 0;

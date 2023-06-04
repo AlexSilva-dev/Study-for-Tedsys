@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-conteudo_principal.css">
-    <link rel="stylesheet" href="style-barra_lateral.css">
-    <link rel="stylesheet" href="style-nav.css">
-    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-conteudo_principal.css">
+    <link rel="stylesheet" href="style/style-barra_lateral.css">
+    <link rel="stylesheet" href="style/style-nav.css">
+    <link rel="stylesheet" href="style/style-footer.css">
 </head>
 
 
@@ -46,6 +46,14 @@
 
 
         <nav class="grid_principal-c1-r1">
+
+            <h1 class="h1-logo">
+                <a class="a-logo" href="index.html">
+                    ALEX<span class="span-logo">SYS</span>
+                </a>
+            </h1>
+
+
             <div class="div-icons">
                 <a href="#"><i class="fas fa-bell i-sino fa-lg"></i></a>
                 <a href="#"><i class="fas fa-user fa-lg"></i></a>
@@ -66,7 +74,7 @@
 
                 <div class="div-topo">
                     <h1 class="h1-titulo">Lista de produtos</h1>
-                    <button class="btn-add">Adicionar produto</button>
+                    <button class="btn-add" onclick="window.location.href='criar-produto.html'">Adicionar produto</button>
 
                 </div>
 
@@ -103,96 +111,68 @@
 
                 <table>
                     <thead>
-                        <tr>
-                            <th>Nome produto</th>
-                            <th>Bruto</th>
-                            <th>Líquido</th>
-                            <th>Lucro</th>
-                            <th>Estoque</th>
-                            <th>Disponível</th>
-                            <th>Venda</th>
-                            <th>Data de expiração</th>
-                            <th>Ações</th>
-                        </tr>
+                      <tr>
+                        <th>Nome produto</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Bruto</th>
+                        <th>Líquido</th>
+                        <th>Venda</th>
+                        <th>Ações</th>
+                      </tr>
                     </thead>
-
-                    <tr>
+                    <tbody>
+                      <tr>
                         <td>Bicicleta</td>
+                        <td>Descrição da bicicleta</td>
+                        <td>Esportes</td>
                         <td>700</td>
                         <td>560</td>
-                        <td>140</td>
-                        <td>40</td>
+                        <td>25</td>
                         <td>
-                            25<br>
-                            de 100
+                          <button class="btn-editar">
+                            <i class="fas fa-pencil-alt"></i>
+                          </button>
+                          <button class="btn-excluir">
+                            <i class="fas fa-eraser"></i>
+                          </button>
                         </td>
-                        <td>
-                            25<br>
-                            <div class="progress-bar"></div>
-                        </td>
-                        <td>20/08/2023</td>
-                        <td>
-                            <button class="btn-editar">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-
-                            <button class="btn-excluir">
-                                <i class="fas fa-eraser"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
+                      </tr>
+                      <tr>
                         <td>Computador</td>
+                        <td>Descrição do computador</td>
+                        <td>Tecnologia</td>
                         <td>1200</td>
                         <td>1000</td>
-                        <td>200</td>
-                        <td>80</td>
-                        <td>
-                            50<br>
-                            de 100
-                        </td>
-                        <td>
-                            50<br>
-                            <div class="progress-bar"></div>
-                        </td>
-                        <td>15/09/2023</td>
-                        <td>
-                            <button class="btn-editar">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-
-                            <button class="btn-excluir">
-                                <i class="fas fa-eraser"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Telefone</td>
-                        <td>500</td>
-                        <td>400</td>
-                        <td>100</td>
                         <td>50</td>
                         <td>
-                            10<br>
-                            de 100
+                          <button class="btn-editar">
+                            <i class="fas fa-pencil-alt"></i>
+                          </button>
+                          <button class="btn-excluir">
+                            <i class="fas fa-eraser"></i>
+                          </button>
                         </td>
+                      </tr>
+                      <tr>
+                        <td>Telefone</td>
+                        <td>Descrição do telefone</td>
+                        <td>Tecnologia</td>
+                        <td>500</td>
+                        <td>400</td>
+                        <td>10</td>
                         <td>
-                            10<br>
-                            <div class="progress-bar"></div>
+                          <button class="btn-editar">
+                            <i class="fas fa-pencil-alt"></i>
+                          </button>
+                          <button class="btn-excluir">
+                            <i class="fas fa-eraser"></i>
+                          </button>
                         </td>
-                        <td>02/10/2023</td>
-                        <td>
-                            <button class="btn-editar">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-
-                            <button class="btn-excluir">
-                                <i class="fas fa-eraser"></i>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-
+                      </tr>
+                    </tbody>
+                  </table>
+                  
             </div>
         </div>
 
@@ -258,7 +238,11 @@
             </nav>
 
             <div class="footer-c1_2-r2">
-                <h1>AlexSYS</h1>
+                <h1 class="h1-logo">
+                    <a class="a-logo" href="index.html">
+                        ALEX<span class="span-logo">SYS</span>
+                    </a>
+                </h1>
             </div>
 
         </footer>

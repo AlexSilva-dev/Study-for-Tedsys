@@ -1,0 +1,9 @@
+
+.ep-h1-navegacao{
+    
+}
+
+#ep-nome{
+    grid-column: 1;
+    grid-template-rows: 2;
+}
