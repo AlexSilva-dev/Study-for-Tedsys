@@ -19,12 +19,20 @@
 }
 
 
+.ep-form-criar_produto div{
+    margin: 0 1vh;
+    min-width: 90px;
+
+}
 
 .ep-linha1, .ep-linha2{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    
 
 }
 
@@ -38,8 +46,9 @@
     margin-left: 1vw;
     margin-top: 2vh;
     border-radius: 8px;
-    padding: 2% 1vw;
+    padding: 1vh 1vw;
     font-size: medium;
+    width: 100%;
 
     border: 0 solid;
     background-color: white;
