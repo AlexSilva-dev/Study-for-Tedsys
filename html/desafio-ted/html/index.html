@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-conteudo_principal.css">
     <link rel="stylesheet" href="style-barra_lateral.css">
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href="style-footer.css">
 </head>
 
 
@@ -18,8 +20,8 @@
     <div class="div-barra_lateral">
 
         <center>
-            <a href="#">
-                <img src="icons/icons8-estatisticas-100.png" alt="home">
+            <a class="a-dash" href="#">
+                <img class="img-dash" src="icons/icons8-estatisticas-100.png" alt="home">
             </a>
 
             <a href="#">
@@ -47,7 +49,9 @@
             <div class="div-icons">
                 <a href="#"><i class="fas fa-bell i-sino fa-lg"></i></a>
                 <a href="#"><i class="fas fa-user fa-lg"></i></a>
-                <a href="#"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                <a class="a-menu" href="#">
+                    <i class="fas fa-ellipsis-v fa-lg i-menu"></i>
+                </a>
 
             </div>
 
@@ -87,7 +91,10 @@
                             <option value="decrecente">Decrecente</option>
                         </select>
 
-                        <input class="btn-filtrar" type="submit" value="filtrar">
+
+                        <button class="btn-filtrar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
 
                 </form>
@@ -95,17 +102,20 @@
 
 
                 <table>
-                    <tr>
-                        <th>Nome produto</th>
-                        <th>Bruto</th>
-                        <th>Líquido</th>
-                        <th>Lucro</th>
-                        <th>Estoque</th>
-                        <th>Disponível</th>
-                        <th>Venda</th>
-                        <th>Data de expiração</th>
-                        <th>Ações</th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Nome produto</th>
+                            <th>Bruto</th>
+                            <th>Líquido</th>
+                            <th>Lucro</th>
+                            <th>Estoque</th>
+                            <th>Disponível</th>
+                            <th>Venda</th>
+                            <th>Data de expiração</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
                     <tr>
                         <td>Bicicleta</td>
                         <td>700</td>
@@ -122,11 +132,15 @@
                         </td>
                         <td>20/08/2023</td>
                         <td>
-                            <button>editar</button>
-                            <button>excluir</button>
+                            <button class="btn-editar">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+
+                            <button class="btn-excluir">
+                                <i class="fas fa-eraser"></i>
+                            </button>
                         </td>
                     </tr>
-                    <!-- Linhas adicionais -->
                     <tr>
                         <td>Computador</td>
                         <td>1200</td>
@@ -143,8 +157,13 @@
                         </td>
                         <td>15/09/2023</td>
                         <td>
-                            <button>editar</button>
-                            <button>excluir</button>
+                            <button class="btn-editar">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+
+                            <button class="btn-excluir">
+                                <i class="fas fa-eraser"></i>
+                            </button>
                         </td>
                     </tr>
                     <tr>
@@ -163,15 +182,89 @@
                         </td>
                         <td>02/10/2023</td>
                         <td>
-                            <button>editar</button>
-                            <button>excluir</button>
+                            <button class="btn-editar">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+
+                            <button class="btn-excluir">
+                                <i class="fas fa-eraser"></i>
+                            </button>
                         </td>
                     </tr>
-                    <!-- Adicione mais linhas conforme necessário -->
                 </table>
 
             </div>
         </div>
+
+        <footer class="grid_principal-c1-r3">
+
+
+
+            <nav class="footer-c1-r1">
+                <h3>Sobre-nós</h3>
+                <ul>
+                    <li>
+                        <a href="#">Quem somos</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer-c2">
+                <h3>Suporte</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Telefones</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Chat</a>
+                    </li>
+                </ul>
+                </nav>
+
+                <nav class="footer-c3-r1">
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="icons/2021_Facebook_icon.svg" alt="facebook">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="icons/Instagram_icon.png" alt="instagram">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="icons/linkedin.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer-c1_2-r2">
+                    <h1>AlexSYS</h1>
+                </div>
+
+                <div>
+
+                </div>
+        </footer>
 
 
     </div>

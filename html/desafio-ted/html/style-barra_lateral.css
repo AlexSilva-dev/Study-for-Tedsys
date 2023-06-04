@@ -6,8 +6,8 @@
     align-content: center;
 }
 
-.div-barra_lateral a{
-}
+
+
 .div-barra_lateral img{
 
     display: inline;
@@ -16,12 +16,19 @@
     background-color: rgb(255, 255, 255);
     margin-top: 5vh;
     border-radius: 10px;
-    scrollbar-shadow-color: black;
-    box-shadow: 1px 1px 10px black; 
+    box-shadow: 0 0 10px rgb(66, 66, 66); 
 
+}
 
+.div-barra_lateral img:hover{
 
+    box-shadow: 0 0 10px black;
+    padding-left: 6%;
+    padding-right: 6%;
+}
 
-
-
+.div-barra_lateral .img-dash{
+    box-shadow: 0 0 10px black;
+    color: aliceblue;
+    padding: 6% 10%;
 }

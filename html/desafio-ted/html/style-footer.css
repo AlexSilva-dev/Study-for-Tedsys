@@ -1,0 +1,29 @@
+.grid_principal-c1-r3 ul{
+    text-decoration: none;
+}
+
+.grid_principal-c1-r3 a{
+    display: block;
+    margin: 5% 0%;
+    color: aliceblue;
+    
+}
+
+.footer-c1-r1{
+    grid: 1 1 1fr;
+}
+
+.footer-c1_2-r2{
+    margin-top: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+.footer-c3-r1{
+
+    grid-column: 3;
+    grid-row: 1;
+}
+.footer-c3-r1 img{
+    width: 15%;
+}

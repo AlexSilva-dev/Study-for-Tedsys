@@ -9,6 +9,7 @@
 .div-topo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
 }
 
 .h1-titulo {
@@ -22,60 +23,167 @@
     align-self: center;
     width: max-content;
     margin-left: auto;
+
+    font-size: large;
+    padding: 10px 2vw;
+    border-radius: 10px;
+    border: 0 solid;
+
+
+    font-weight: 600;
+    color: aliceblue;
+    box-shadow: 0 0 10px gray;
+    background-color: rgb(0, 132, 255);
+}
+
+.btn-add:hover, .btn-filtrar:hover{
+
+    box-shadow: 0 0 10px rgb(80, 80, 80);
+
+    
+
 }
 
 
 .form-pesquisa {
-    margin-top: 4%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-}
-
-.div-tipos_filtros {
-    display: inline;
-    width: max-content;
-    grid-column: 5;
 }
 
 #search {
     display: inline;
     grid-column: 1;
 
+
+
 }
+
+.div-tipos_filtros {
+    display: inline;
+    width: 400px;
+    grid-column: 4;
+    text-align: end;
+}
+
+
+#search {
+    border-radius: 8px;
+    border: 1px solid rgb(243, 170, 35);
+    padding: 2% 1%;
+
+    font-size: medium;
+
+}
+
+.select-filtro,
+.select-ordem {
+    border-radius: 8px;
+    padding: 2% 1%;
+    font-size: medium;
+
+    border: 0 solid;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(190, 188, 188);
+
+
+}
+
+#search:focus,
+.select-filtro:focus,
+.select-ordem:focus {
+
+    box-shadow: 0 0 5px rgb(243, 170, 35);
+}
+
 
 .select-filtro,
 .select-ordem,
 .btn-filtrar {
     width: max-content;
     display: inline;
+}
 
+.btn-filtrar {
+
+
+    background-color: white;
+    box-shadow: 0 0 10px rgb(190, 188, 188);
+    font-size: large;
+    padding: 10px 2vw;
+    border-radius: 10px;
+    border: 0 solid;
+    color: aliceblue;
+    background-color: rgb(0, 132, 255);
 
 
 }
 
-table{
-    margin: 0;
+
+table {
+    margin-top: 5vh;
     width: 100%;
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     vertical-align: top;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+
+th,
+td {
+    min-width: 8vw;
+    padding: 1vh 1%;
+}
+
+th:nth-child(8){
+    min-width: 15vw;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: whitesmoke; /* Cor da linha ímpar */
+    background-color: aliceblue;
 }
 
 tr:nth-child(even) {
-    background-color: white; /* Cor da linha par */
+    background-color: white;
 }
 
-td{
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+thead tr {
+
+    height: 10vh;
+
 }
 
-.progress-bar{
+tbody tr:hover {
+    background-color: rgba(243, 234, 104, 0.801);
+}
+
+thead tr {
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+
+
+.progress-bar {
     /* vamos declarar nossa
       variável com o nome de
       "progress". Ela terá seu
@@ -86,12 +194,45 @@ td{
     padding: 1px;
     background-color: #ccc;
     display: flex;
-  }
-  
-  .progress-bar::before{
+}
+
+.progress-bar::before {
     content: "";
     content: "";
     width: calc(var(--progress) * 1%);
-    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
-  }
-  
+    background-color: hsl(calc(var(--progress) * 1.2), 80%, 50%);
+}
+.btn-excluir, .btn-editar{
+    margin: 2px 2px;
+    padding: 1.5vh 1.5vh;
+    font-size: 100%;
+    border: 0 solid;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}
+
+.btn-excluir:hover, .btn-editar:hover{
+    box-shadow: 0 0 15px gray;
+
+
+}
+
+.btn-excluir:active, .btn-editar:active{
+
+    box-shadow: none;
+
+}
+
+.btn-editar{
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+
+.btn-excluir{
+    background-color: rgb(214, 10, 10);
+    color: white;
+   
+    
+}
