@@ -6,20 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página misteriosa</title>
 
+    <script src="js/funcao.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body-background">
+<body id="body" class="body-background">
     <div class="container-backgroud">
-        <div class="card">
-            <h1>Feliz dia dos namorados!!!!💕</h1>
-            <p class="paragrafo">
-                
+        <div id="card-misterio" class="card invisible w">
+            <h1 class="title">Feliz dia dos namorados!!!!💕</h1>
+            <p id="p-txt">
+
             </p>
+            <button class="btn-img" onclick="passTxt()"><img class="img-btn" src="imagen/image.png" alt=""></button>
         </div>
+
+        <div id="card-misterio1" class="card invisible w">
+            <h1 id="tit" class="title"></h1>
+            <p id="p-txt1">
+
+            </p>
+            <button class="btn-img" onclick="photoPass()"><img class="img-btn" src="imagen/image.png" alt=""></button>
+        </div>
+
     </div>
 
 </body>
 
-<script src="js/funcao.js"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+            setTimeout(function(){
+                visible("card-misterio")
+            }, 3000)
+            setTimeout(function(){
+                text = "Feliz dia dos namorados para a mulher mais importante da minha vida, mas vc n é só minha namorada, você é minha amiga, minha companheira, a mulher que quero morrer ao lado "
+
+                digitar(text, "p-txt");
+            }, 7000)
+            
+
+        });
+</script>
+
 
 </html>
