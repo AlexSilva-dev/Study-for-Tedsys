@@ -72,8 +72,25 @@ function photoPass(){
     let body = document.getElementById("boby")
     body = document.getElementsByClassName("body-background")[0]
     console.log(body)
-    document.addEventListener("DOMContentLoaded", function(){
-        body.style.backgroundImage = 'url("imagen/ju1.jpeg")'
-    });
+
+
+    var i=1
+
+    function trocar(){
+
+        body.style.transition= "background-image 2s"
+        body.style.backgroundImage = `url("imagen/ju${i}.jpeg")`
+        console.log(`url("imagen/ju${i}.jpeg")`)
+
+        i++      
+        if(i<5){
+
+            setTimeout(trocar, 3000)
+        }
+
+    }
+    trocar()
+
+    
 
 }
