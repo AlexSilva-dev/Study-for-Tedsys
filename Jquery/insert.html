@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Insert</title>
+</head>
+<script>
+    $(function(){
+        // add um elemento filho no final 
+        $('#list').append('<p>Fui inserido no final</p>')
+        // add um elemento filho no começo do html
+        $('#list').prepend('<p>Fui inserido no inicio</p>')
+
+        // Add um elemento antes do html selecionado, sendo assim add um irmão do html
+        $('#list').after('<p>Fui inserido antes do html (sou irmão dele)</p>')
+        // Add um elemento depois do html selecionado
+        $('#list').before('<p>Fui inserido depois do html (sou irmão dele)</p>')
+
+        // Exclui o elemento selecionado
+        $('#excluir').remove();
+        
+    });
+</script>
+<body>
+    
+    <ul id="list">
+
+        <li>item 4</li>
+        <li id="excluir">item 3</li>
+        <li>item 2</li>
+        <li>item 1</li>
+    </ul>
+
+</body>
+
+</html>
