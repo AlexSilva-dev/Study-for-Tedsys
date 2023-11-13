@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo pelo Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+
+<script>
+
+    $(function(){
+        // Adicionando css line
+        $('div').css('width', '10vw').css('height', '10vw');
+        $('div').css('margin', '10px');
+
+        // Adicionando css line passando mais de um estilo ao mesmo tempo.
+        $('#retangulo').css({
+            'width': '20vw',
+            'height': '10vw',
+        })
+        
+        // Add classes
+        $('#bola-azul').addClass('bola blue')
+
+
+        // Removendo classes
+        $('#removeclass').removeClass('div')
+
+    })
+</script>
+
+<style>
+    div{
+        background-color: rebeccapurple;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .bola{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 100%;
+    }
+    .div {
+        padding-left: 30px;
+    }
+</style>
+
+<body>
+    <div></div>
+    <div id="retangulo"></div>
+    <div id="bola-azul"></div>
+    <div></div>
+    <div id="removeclass" class="bola div"></div>
+</body>
+</html>

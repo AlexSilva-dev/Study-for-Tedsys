@@ -1,0 +1,43 @@
+.div-barra_lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  
+  
+}
+
+.div-barra_lateral a{
+  display: inline;
+  width: min-content;
+}
+
+.div-barra_lateral img {
+  display: inline;
+  width: 40px;
+  padding: 4%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(66, 66, 66);
+}
+
+.div-barra_lateral img:hover {
+  box-shadow: 0 0 10px black;
+  transition: 0.2s;
+  width: 45px;
+  
+}
+
+.div-barra_lateral .img-dash {
+  box-shadow: 0 0 12px black;
+  color: aliceblue;
+  width: 45px;
+
+}
+
+.img-dash
+
+.i-dash:hover {
+  box-shadow: 0 0 10px black;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(() =>{
+				// Selecionar o elemento pai de um elemento
+				console.log('\nSelecionando pai de subSecao')
+				console.log($('.subSecao').parent())
+
+				
+				// Selecionar qualquer elemento pai/parente a cima, de um elemento
+				console.log('\nSelecionando a div#pagina a parti do seu neto div.subSecao.')
+				console.log($('.subSecao').closest('#pagina'))
+
+
+				// Selecionar o elemento filho de um elemento,
+				// usando um seletor, já que pode conter mais de um filho.
+				// find() Pode pesquisar na suas arvores de filhos.
+				console.log('\nSelecionando H1 a parti do seu pai secao2')
+				console.log($('.secao2').find('h1'))
+
+				console.log('\nSelecionando H1 a parti do seu parente #pagina')
+				console.log($('#pagina').find('h1'))
+
+				console.log('\n\nSelecionando todos os elementos li filhos do #topo')
+				console.log( $('#topo').find('li'))
+
+			})
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="topo">
+			<ul class="menu">
+				<li class="item"></li>
+				<li class="item"></li>
+			</ul>
+		</div>
+
+		<div id="pagina">
+			<div class="secao1">
+				<div class="subSecao"></div>
+			</div>
+			
+			<div class="secao2">
+				<h1></h1>
+			</div>
+		</div>		
+		
+		<div id="rodape">
+			<div>
+				<p></p>	
+				<span id="opcao1"></span>
+			</div>
+		</div>
+
+		<img src="img/estrutura.png" alt="dom" width="100%">
+	</body>
+
+</html>
